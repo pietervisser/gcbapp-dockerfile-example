@@ -15,3 +15,4 @@
 
 echo "Hello, world!"
 echo "Whooop.. $(date)"
+echo "And even a third line.."

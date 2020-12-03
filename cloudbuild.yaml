@@ -4,4 +4,4 @@ steps:
 - name: 'bash'
   args: ['cat', 'helloworld.sh']
 - name: 'eu.gcr.io/$PROJECT_ID/docker-compose'
-  args: ['up']
+  args: ['run', 'helloworld']

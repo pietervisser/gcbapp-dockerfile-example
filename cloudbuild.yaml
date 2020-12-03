@@ -1,5 +1,5 @@
 steps:
 - name: 'bash'
-  args: ['echo', 'I am running a bash command..']
+  args: ['echo', 'I am running a bash command...']
 - name: 'bash'
   args: ['cat', 'helloworld.sh']

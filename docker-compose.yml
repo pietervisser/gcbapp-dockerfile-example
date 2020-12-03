@@ -1,3 +1,12 @@
-helloworld:
-  image: ubuntu
-  command: /bin/echo 'Hello world from compose'
+version: '3'
+
+services:
+ 
+  helloworld:
+    image: ubuntu
+    command: /bin/echo 'Hello world from compose' 
+    depends_on:
+      - redis
+  
+  redis:
+    image: redis:5

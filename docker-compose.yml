@@ -1,12 +1,12 @@
 version: '3'
 
 services:
- 
+
   helloworld:
-    image: ubuntu
-    command: /bin/echo 'Hello world from compose' 
+    image: redis:5
+    command: redis-cli -h redis set x y
     depends_on:
       - redis
-  
+
   redis:
     image: redis:5
